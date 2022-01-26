@@ -18,17 +18,24 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+## Firestore DataBase
 
-To learn more about Next.js, take a look at the following resources:
+Para Salvar os arquivos para que eles persistam na aplicação, é necessário adicionar um projeto em "https://console.firebase.google.com/". 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Depois é necessário criar um arquivo na raiz do projeto chamado ".env.local", e nele adicionar as seguintes linhas:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+NEXT_PUBLIC_FIREBASE_API_KEY =  "Sua Chave"
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN = "Seu Domínio"
+NEXT_PUBLIC_FIREBASE_PROJECT_ID = "Seu Project ID"
 
-## Deploy on Vercel
+Você deverá substituir os valores acima, incluindo as chaves pelos valores disponibilizados nas configurações do seu projeto no firebase.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Para acessar as configurações do seu projeto, basta clicar na engrenagem, ir até o final da página e observar os valores logo abaixo do comentário:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+// Your web app's Firebase configuration.
+
+Após isso, você conseguirá executar e persistir com os dados.
+
+## Vercel Aplication
+
+O projeto está no ar pela vercel, mas como as informações de banco de dados do firebase são dados sensíveis (chave de acesso, id, etc...), não estão presentes neste repositório. Dito isso, no site da vercel poderá ser observado apenas o template. Caso queira ver o projeto funcionando, basta baixar o projeto seguir o tutorial acima sobre o "Firestore Database" e executálo em sua máquina.
