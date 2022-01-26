@@ -38,4 +38,4 @@ Após isso, você conseguirá executar e persistir com os dados.
 
 ## Vercel Aplication
 
-O projeto está no ar pela vercel, mas como as informações de banco de dados do firebase são dados sensíveis (chave de acesso, id, etc...), não estão presentes neste repositório. Dito isso, no site da vercel poderá ser observado apenas o template. Caso queira ver o projeto funcionando, basta baixar o projeto seguir o tutorial acima sobre o "Firestore Database" e executálo em sua máquina.
+O projeto está no ar pela vercel, mas como as informações de banco de dados do firebase são dados sensíveis (chave de acesso, id, etc...), não estão presentes neste repositório. Dito isso, no site da vercel poderá ser observado apenas o template. Caso queira ver o projeto funcionando, basta baixar o projeto seguir o tutorial acima sobre o "Firestore Database" e executá-lo em sua máquina.
